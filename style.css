@@ -1,0 +1,95 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    height: 100%;
+    color: white;
+    background-image: url("bg.png");
+    background-color: white;
+      
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    color: white;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #005a9c;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-picture {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin-bottom: 10px;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-menu a:hover {
+    background-color: #003d69;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+header h1 {
+    color: #005a9c;
+    border-bottom: 2px solid #005a9c;
+    padding-bottom: 10px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    color: #666;
+}
+
+/* Styles for embedded figures and videos */
+.figure, .video {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+.video iframe {
+    max-width: 100%;
+}

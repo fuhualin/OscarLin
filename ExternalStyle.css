@@ -1,0 +1,229 @@
+/*
+Athabasca University ISML Research Cluster Site
+Author: Leo Howard, 2022
+*/
+
+/* Default class for the whole page. */
+html {
+  background-color: white;
+  color: black;
+}
+
+/* Default class for the html body. */
+body{
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Default class for header type 1. */
+h1{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* Default class for header type 2. */
+h2{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* Default class for all links.  */
+a {
+  font-family: "Serif", University, monospace;
+  font-size: 100%;
+  font-weight: bold;
+  text-decoration: none; /* No underline.  */
+  color: darkgreen;
+  text-align: center;
+  height: 100%;
+}
+
+/* Style for the background of all links. */
+.a_Background{
+  height: 50%;
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style for all break lines that separate the page contents.  */
+hr {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  height: 1px;
+  background-color: gray;
+}
+
+/* Style for all embedded images. */
+img{
+  width: 50%;
+  display:block; /* Images are by default displayed inline - which causes the padding below the image. (because of line-height) */
+}
+
+/* Style for all embedded videos. */
+video{
+ max-width:50%;
+ height:100%;
+ margin:1.25rem auto;
+ padding:1.051%;
+ background-color:#666;
+}
+
+/* Style for header portion of html body. */
+.header {
+  background-color: white;
+  color: black;
+  font-family: "Serif", University, monospace;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* Style for mid portion of the html body. */
+.mid {
+  background-color: white;
+  font-family: "Serif", University, monospace;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Style for footer portion of the html body. */
+.footer {
+  background-color: lightblue;
+  color: black;
+  text-align: center;
+  padding-bottom: 2.5%
+}
+
+/* Style for the division that contains both the side bar and page content divs. */
+.pageSplitter_SideBar_Content{
+  display: grid;
+  grid-template-columns: 0.15fr 0.85fr;
+  grid-gap: 0;
+}
+
+/* Style for the side bar. */
+.sideBar{
+  background-color: lightblue;
+  width:100%;
+}
+
+/* Style for the side bar background. */
+.sideBarBackground{
+  width:100%;
+  background-color: lightblue;
+}
+
+/* Style for the page content area. */
+.pageContent{
+  border: 0px solid black;
+  padding: 2.5%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* Style for a paragraph that stands alone. */
+.paragraph_Standalone{
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+/* Style for a paragraph nested within the page content division. */
+.paragraph_PageContent{
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/* Small images that are not part of table:  */
+.img_Standalone_Small{
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Style for all tables. */
+table{
+  margin: auto;
+  margin: auto;
+  width: 100%;
+  table-layout: fixed;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Style for all table rows. */
+tr{
+  height: 50px;
+}
+
+/* Style for all table headers. */
+th{
+  border: 2px solid black;
+  padding: 0;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  font-weight: normal;
+}
+
+/* Style for all table bodies. */
+td{
+  border: 2px solid black;
+  padding: 0.5%;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 50px;
+  max-width: 25%;  /* This needs to be set, because for some reasons text-align center doesn't work without width. */
+}
+
+/* Style for a table that needs to span 100% of its parent container. */
+.tableDiv_100{
+  margin: auto;
+  width: 100%;
+}
+
+/* Style for a table that needs to span 80% of its parent container. */
+.tableDiv_80{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+}
+
+/* Style for a table that needs to span 60% of its parent container. */
+.tableDiv_60{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60%;
+}
+
+/* Style for a table that needs to span 25% of its parent container. */
+.tableDiv_25{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 25%;
+}
+
+/* Style for a table that needs to span 10% of its parent container. */
+.tableDiv_10{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 10%;
+}
+/* Revert CSS style of target element and its children */                       
+.reset-style, .reset-style * {
+  all: revert;
+}
